@@ -13,10 +13,10 @@ class Mail {
      * @param string $from
      */
     public function __constructor (string $to, string $subject, string $message, string $from) {
-        $this ->setTo($to)(trim(strip_tags($to)));
-        $this ->setSubject($subject)(trim(strip_tags($subject)));
-        $this ->setMessage($message)(trim(strip_tags($message)));
-        $this ->setFrom($from)(trim(strip_tags($from)));
+        $this ->setTo(trim(strip_tags($to)));
+        $this ->setSubject(trim(strip_tags($subject)));
+        $this ->setMessage(trim(strip_tags($message)));
+        $this ->setFrom(trim(strip_tags($from)));
     }
 
     /**
