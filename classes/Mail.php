@@ -75,12 +75,7 @@ class Mail {
         $this ->from = $from;
     }
 
-    /**
-     * @param string $to
-     * @param string $subject
-     * @param string $message
-     */
-    public function userMail(string $to, string $subject, string $message):void {
+    public function sendMail():void {
         mail($this->to, $this->subject, $this->message, $this->from);
     }
 }
